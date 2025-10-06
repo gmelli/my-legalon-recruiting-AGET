@@ -1,0 +1,36 @@
+{
+  "aget_version": "2.5.1",
+  "created": "2025-10-05",
+  "template": "worker",
+  "tier": "worker",
+  "agent_name": "my-legalon-recruiting-AGET",
+  "instance_type": "AGET",
+  "domain": "recruiting",
+  "aget_group": "GM-LEGALON",
+  "managed_by": "my-supervisor-AGET",
+  "intelligence_enabled": true,
+  "collaboration_enabled": true,
+  "patterns": {
+    "session": "1.1.0",
+    "housekeeping": "1.0.0",
+    "documentation": "1.0.0",
+    "recovery": "1.0.0",
+    "meta": "0.1.0",
+    "intelligence": "1.0.0",
+    "specification": "1.1.0",
+    "versioning": "1.0.0"
+  },
+  "compatibility": {
+    "backwards_compatible": false,
+    "breaking_changes": [
+      "CLAUDE.md must be symlink to AGENTS.md",
+      "Pattern versioning system required",
+      "Session metadata schema v1.0",
+      "Naming convention: -AGET (action) vs -aget (info-only)",
+      "aget_group field required for portfolio agents",
+      "Contract tests required for wake and identity protocols"
+    ],
+    "deprecated": []
+  },
+  "notes": "v2.5.1 Recruiting agent for GM-LEGALON portfolio. Reviews candidates against job descriptions and level requirements with strict privacy controls."
+}
