@@ -63,13 +63,27 @@ my-legalon-recruiting-AGET/
 ├── .aget/              # Framework metadata
 ├── data/
 │   ├── job_descriptions/  # Job specs (committed)
+│   │   ├── ai-engineer-agents.md
+│   │   ├── ai-engineer-nlp.md
+│   │   └── data-scientist-product.md
 │   ├── level_requirements/ # Experience levels (committed)
+│   │   ├── engineering-levels.md (L3-L6)
+│   │   └── data-science-levels.md (DS1-DS4)
 │   └── candidates/        # ⚠️ PII - NEVER COMMITTED
+│       ├── japan/         # Japan region candidates
+│       └── usa/           # USA region candidates
 ├── workspace/
 │   └── evaluations/       # ⚠️ May contain PII - gitignored
 ├── products/              # Sanitized outputs only
 ├── docs/                  # Documentation
+│   ├── evaluation-template.md
+│   ├── workflow.md
+│   └── lessons-learned.md
 └── sessions/              # Session notes (no PII)
+
+Input locations (external to repo):
+├── ~/Downloads/resumes-JP/   # Japan candidate resumes
+└── ~/Downloads/resumes-US/   # USA candidate resumes
 ```
 
 ---
